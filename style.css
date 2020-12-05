@@ -1,0 +1,394 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+}
+
+.header {
+  /*background-color:#fbf0f0;*/
+  background-color: white;
+}
+
+.container {
+  padding: 20px;
+}
+
+
+
+/*navigation bar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side .logo-name {
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.logo-name p {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.right-side {
+  position: relative;
+  right: 10px;
+  display: flex;
+}
+
+.right {
+  margin-right: 20px;
+  border-bottom: 1px solid tranparent;
+  transition: border-bottom 0.1s;
+}
+
+.right a {
+  color: grey;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 20px;
+}
+
+.right img {
+  cursor: pointer;
+}
+
+.right a:hover {
+  color: black;
+}
+
+.right:hover {
+  border-bottom: 1px solid black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
+
+/*Horizontal line
+hr{
+  height: 0;
+  width: 90%;
+}*/
+
+
+
+
+/*First page button*/
+.explore-button a {
+  color: #311d3f;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 40px;
+  position: absolute;
+  top: 60%;
+  left: 7%;
+}
+
+.explore-button a:hover {
+  color: #88304e;
+}
+
+
+
+
+/*Second page offers*/
+.second-page {
+  margin-left: 2%;
+}
+
+.second-page-text {
+  max-width: 50%;
+  position: absolute;
+  top: 800px;
+  left: 300px;
+  font-size: 50px;
+  color: black;
+}
+
+.mySlides {
+  margin-left: 5%;
+  display: none;
+}
+
+
+
+
+/*Third page*/
+.experience-flavours{
+  font-size: 60px;
+  color: purple;
+padding-left: 450px;
+}
+
+.third-page1{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.cupcake {
+  position: relative;
+  width: 40%;
+}
+
+.cupcake:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.donut {
+  position: relative;
+  width: 40%;
+}
+
+.donut:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.third-page2{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.cake {
+  position: relative;
+  width: 40%;
+}
+
+.cake:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.icecream {
+  position: relative;
+  width: 40%;
+}
+
+.icecream:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.surprise{
+  position: absolute;
+  left: 30%;
+  width: 40%;
+}
+
+.surprise:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #eec8f3;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.overlay-button {
+  color: #590d82;
+  font-size: 50px;
+  position: absolute;
+  top: 130px;
+  left: 40px;
+  text-align: center;
+  transition: color 0.1s;
+}
+
+.overlay-button:hover{
+  color: #b61aae;
+}
+
+
+
+
+/*ABOUT*/
+.about-page{
+  font-size: 30px;
+}
+
+
+
+
+/*FORMS*/
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 51%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.f{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+
+
+/*FEEDBACK FORM LINK*/
+.feedback-link{
+  color:#f38181;
+}
+
+
+
+
+/*PRODUCTS*/
+.product-page-cake{
+  background-color: #f2f2f2;
+  display: flex;
+  padding:20px;
+}
+
+.left-links{
+  margin-right:150px;
+  padding-top: 50px;
+}
+
+.product-page{
+  background-color: #f2f2f2;
+
+}
+
+.product1{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.product2{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+
+.img{
+  padding:30px;
+  border: 2px solid pink;
+  transition: transform 0.1s;
+  cursor:pointer;
+}
+
+.img:hover{
+  transform:scale(1.1);
+}
+
+.btn{
+  cursor:pointer;
+  color:purple;
+
+}
+
+.cake-link{
+  cursor: pointer;
+  padding: 10px;
+  background-color: pink;
+  border-radius: 10px;
+  transition: color 0.1s;
+}
+
+.cake-link:hover{
+  color: #ffe2e2;
+}
+
+
+
+
+
+/*PRODUCT indexcart*/
+.card-body{
+  display: flex;
+background-color: pink;
+}
